@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LAPORAN TEORI</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      transition: all 0.3s ease;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .rapi {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .berantakan {
+      background-color: #ff00ff;
+      color: #00ffff;
+      font-family: 'Comic Sans MS', cursive;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: gray;
+    }
+
+    h3 {
+      cursor: pointer;
+      color: #007bff;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 999;
+    }
+    </style>
+</head>
+<body class="rapi">
+    <button class="toggle-btn" onclick="toggleTheme()">Ganti Tampilan</button>
+
+    <header>
+        <h1>LAPORAN TEORI</h1>
+        <h2>Ahmad Zulfadhli | 202332038</h2>
+    </header>
+
+    <section>
+        <h3 onclick="toggleContent(this)">1. Mengapa menggunakan CSS dan JavaScript dalam pemrograman web?</h3>
+    <div>
+        <p>
+            CSS dan JavaScript adalah dua komponen penting dalam pengembangan web modern. Masing-masing memiliki peran yang berbeda namun saling melengkapi dalam menciptakan tampilan dan interaktivitas pada sebuah halaman web.
+        </p>
+        <h4>CSS (Cascading Style Sheets)</h4>
+        <p>
+            CSS digunakan untuk mengatur tampilan visual dari sebuah halaman web. Tanpa CSS, halaman web hanya akan berupa kumpulan teks dan elemen HTML dasar yang tampil sangat sederhana dan membosankan. CSS memungkinkan kita untuk:
+        </p>
+        <ul>
+            <li>Mengatur warna teks, latar belakang, border, dan efek visual lainnya.</li>
+            <li>Menyusun layout halaman (misalnya membuat kolom, header, sidebar, dsb).</li>
+            <li>Membuat tampilan yang responsif, yaitu tampilan yang menyesuaikan dengan ukuran layar perangkat (ponsel, tablet, laptop).</li>
+            <li>Mengatur animasi dan transisi antar elemen web.</li>
+        </ul>
+        <p>
+            Dengan CSS, pengembang web dapat menciptakan pengalaman pengguna user experience yang lebih menyenangkan dan profesional.
+        </p>
+        <h4>JavaScript</h4>
+        <p>
+            JavaScript adalah bahasa pemrograman yang digunakan untuk menambahkan interaktivitas dan logika dinamis ke dalam halaman web. Dengan JavaScript, web tidak lagi hanya menampilkan konten statis, melainkan bisa berinteraksi langsung dengan pengguna. JavaScript dapat:
+        </p>
+        <ul>
+            <li>Menangani event seperti klik tombol, input dari pengguna, hover, scroll, dll.</li>
+            <li>Mengubah konten halaman tanpa perlu <span style="text-decoration: underline;">refresh</span> (menggunakan DOM manipulation).</li>
+            <li>Mengirim dan menerima data dari server tanpa <span style="text-decoration: underline;">reload</span> halaman (AJAX).</li>
+            <li>Menyimpan data sementara di browser (menggunakan <span style="text-decoration: underline;">localStorage</span>, <span style="text-decoration: underline;">cookies</span>).</li>
+            <li>Membangun aplikasi web kompleks seperti <span style="text-decoration: underline;">single-page application</span> (SPA).</li>
+        </ul>
+        <p>
+            Kombinasi CSS dan JavaScript menjadikan web menjadi tidak hanya enak dilihat, tetapi juga berfungsi secara interaktif dan dinamis.
+        </p>
+        </div>
+    </section>
+
+    <section>
+        <h3 onclick="toggleContent(this)">2. Bagaimana CSS dan JavaScript dapat diintegrasikan dalam pemrograman web?</h3>
+    <div>
+        <p>
+            Integrasi CSS dan JavaScript dalam pemrograman web biasanya dilakukan dengan cara menyisipkan atau menautkan file CSS dan JavaScript ke dalam file HTML. Berikut ini beberapa cara integrasi keduanya:
+        </p>
+        <h4>Integrasi CSS</h4>
+        <ul>
+            <li><strong>Inline CSS</strong><br>
+                CSS ditulis langsung di dalam atribut <code>style</code> pada tag HTML.<br>
+                Contoh: <code>&lt;p style="color: red;"&gt;Hello&lt;/p&gt;</code>
+            </li>
+            <li><strong>Internal CSS</strong><br>
+                CSS ditulis di dalam tag <code>&lt;style&gt;</code> pada bagian <code>&lt;head&gt;</code> dokumen HTML.<br>
+                Contoh: <code>&lt;style&gt; body { background-color: lightblue; } &lt;/style&gt;</code>
+            </li>
+            <li><strong>External CSS</strong><br>
+                File CSS ditulis terpisah dan ditautkan ke HTML melalui tag <code>&lt;link&gt;</code>.<br>
+                Contoh: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+            </li>
+        </ul>
+        <h4>Integrasi JavaScript</h4>
+        <ul>
+            <li><strong>Inline JavaScript</strong><br>
+                JavaScript ditulis langsung dalam atribut HTML, seperti <code>onclick</code>.<br>
+                Contoh: <code>&lt;button onclick="alert('Hello!')"&gt;Click Me&lt;/button&gt;</code>
+            </li>
+            <li><strong>Internal JavaScript</strong><br>
+                JavaScript ditulis di dalam tag <code>&lt;script&gt;</code> dalam file HTML, biasanya di bagian akhir <code>&lt;body&gt;</code>.<br>
+                Contoh: <code>&lt;script&gt; alert('Selamat datang!'); &lt;/script&gt;</code>
+            </li>
+            <li><strong>External JavaScript</strong><br>
+                JavaScript ditulis dalam file <code>.js</code> terpisah dan dihubungkan ke HTML dengan <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>.
+            </li>
+        </ul>
+    </div>
+    </section>
+
+    <section>
+        <h3 onclick="toggleContent(this)">3. Jelaskan apa saja keuntungan menggunakan JavaScript dan CSS?</h3>
+    <div>
+        <p>
+            Berikut adalah beberapa keuntungan menggunakan JavaScript dan CSS dalam pengembangan web:
+        </p>
+        <h4>Keuntungan Menggunakan JavaScript:</h4>
+        <ul>
+            <li><strong>Interaktivitas Tinggi:</strong> JavaScript membuat situs web lebih hidup dan interaktif, seperti form validation, slider gambar, kalkulator, hingga game berbasis web.</li>
+            <li><strong>Eksekusi di Client-side:</strong> JavaScript dijalankan langsung di browser pengguna, sehingga tidak perlu bolak-balik ke server, membuat aplikasi lebih cepat dan responsif.</li>
+            <li><strong>DOM Manipulation:</strong> Dapat mengubah isi, struktur, dan gaya dari halaman web secara langsung.</li>
+            <li><strong>Dukungan Luas:</strong> Hampir semua browser mendukung JavaScript, serta banyak framework/library seperti jQuery, React, Angular, dan Vue yang mempermudah pengembangan.</li>
+            <li><strong>Fleksibilitas:</strong> JavaScript bisa digunakan untuk front-end dan back-end (dengan Node.js), memungkinkan full-stack development menggunakan satu bahasa.</li>
+        </ul>
+        <h4>Keuntungan Menggunakan CSS:</h4>
+        <ul>
+            <li><strong>Pemisahan Konten dan Tampilan:</strong> CSS memungkinkan pemisahan antara konten (HTML) dan desain (CSS), sehingga lebih mudah dalam pengelolaan kode.</li>
+            <li><strong>Konsistensi Desain:</strong> Dengan CSS, kita bisa menerapkan gaya yang sama ke berbagai elemen sekaligus hanya dengan satu definisi.</li>
+            <li><strong>Pengurangan Ukuran File HTML:</strong> Dengan menempatkan gaya dalam file CSS eksternal, file HTML menjadi lebih bersih dan ringan.</li>
+            <li><strong>Kemudahan Maintenance:</strong> Mengubah tampilan cukup dari satu file CSS tanpa mengubah semua file HTML.</li>
+            <li><strong>Responsive Design:</strong> CSS mendukung media query dan teknologi lain yang membuat tampilan web optimal di berbagai perangkat.</li>
+        </ul>
+    </div>
+    </section>
+
+    <section>
+        <h3 onclick="toggleContent(this)">4. Jelaskan apa saja keuntungan menggunakan Bootstrap?</h3>
+    <div>
+        <p>
+            Bootstrap adalah framework front-end berbasis CSS dan JavaScript yang dirancang untuk mempercepat dan mempermudah pengembangan antarmuka web responsif dan mobile-first. Berikut adalah keuntungan menggunakan Bootstrap:
+        </p>
+        <ul>
+            <li><strong>Cepat dan Efisien:</strong> Bootstrap menyediakan komponen siap pakai (seperti tombol, form, navigasi, grid, dll) sehingga pengembang tidak perlu membuat semuanya dari awal.</li>
+            <li><strong>Desain Responsif:</strong> Bootstrap secara otomatis menyesuaikan tampilan halaman web di berbagai perangkat (laptop, tablet, ponsel) berkat sistem grid 12 kolom dan media query bawaan.</li>
+            <li><strong>Konsistensi:</strong> Karena semua komponen mengikuti gaya dan standar yang sama, tampilan antarmuka menjadi konsisten di seluruh halaman.</li>
+            <li><strong>Cross-Browser Compatibility:</strong> Bootstrap dirancang untuk bekerja secara konsisten di berbagai browser modern (Chrome, Firefox, Safari, Edge, dll).</li>
+            <li><strong>Komunitas Besar dan Dokumentasi Lengkap:</strong> Dokumentasi resmi Bootstrap sangat lengkap dan mudah dipahami, serta didukung oleh komunitas global yang aktif.</li>
+            <li><strong>Customisasi Mudah:</strong> Meskipun Bootstrap menyediakan gaya default, pengembang tetap bisa menyesuaikan desain sesuai kebutuhan dengan mudah.</li>
+            <li><strong>Integrasi Mudah:</strong> Bootstrap dapat dengan cepat diintegrasikan ke dalam proyek hanya dengan menambahkan link CDN ke file HTML.</li>
+        </ul>
+    </div>
+    </section>
+
+    <section>
+        <h3 onclick="toggleContent(this)">5. Contoh Penggunaan Bootstrap dan Fungsinya</h3>
+    <div>
+        <p>
+            Contoh Penggunaan Bootstrap – Tombol (Button) Berwarna. Kode HTML berikut menunjukkan penggunaan salah satu komponen Bootstrap, yaitu tombol dengan berbagai kelas gaya:
+        </p>
+        <h4>Code:</h4>
+        <img src="code.png" alt="Contoh Gambar Code" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+        <h4>Fungsinya:</h4>
+        <p>
+            Tombol-tombol ini menggunakan class Bootstrap seperti btn dan btn-primary, btn-success, dll, yang secara otomatis memberikan warna, padding, border radius, dan efek hover sesuai desain Bootstrap.
+        </p>
+        <h4>Hasil running:</h4>
+        <img src="run.png" alt="Hasil running Code" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+    </div>
+  </section>
+
+  <script>
+    function toggleContent(header) {
+      const content = header.nextElementSibling;
+      const confirmHide = confirm("Apakah Anda ingin menyembunyikan/menampilkan bagian ini?");
+      if (confirmHide) {
+        content.style.display = content.style.display === "none" ? "block" : "none";
+      }
+    }
+
+    function toggleTheme() {
+      const body = document.body;
+      body.classList.toggle("rapi");
+      body.classList.toggle("berantakan");
+    }
+  </script>
+</body>
+</html>
